@@ -1,0 +1,16 @@
+2019/04/21 16:36:28 [notice] 200#11768: signal process started
+2019/04/21 16:36:35 [notice] 1556#6136: signal process started
+2019/04/21 16:39:15 [notice] 4148#960: signal process started
+2019/04/21 16:39:15 [error] 4148#960: CreateFile() "D:\My_Utils\nginx-1.12.2_pandamall/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2019/04/21 16:40:59 [notice] 3944#9528: signal process started
+2019/04/21 16:40:59 [error] 3944#9528: CreateFile() "D:\My_Utils\nginx-1.12.2_pandamall/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2019/04/21 16:41:32 [notice] 2036#11140: signal process started
+2019/04/21 16:41:32 [error] 2036#11140: CreateFile() "D:\My_Utils\nginx-1.12.2_pandamall/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2019/04/21 16:41:40 [notice] 14316#2768: signal process started
+2019/04/21 16:42:10 [notice] 8328#3540: signal process started
+2019/04/22 14:53:48 [notice] 11512#10628: signal process started
+2019/04/22 14:53:48 [error] 11512#10628: OpenEvent("Global\ngx_stop_4352") failed (2: The system cannot find the file specified)
+2019/04/26 15:01:41 [error] 7924#5388: *4 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while connecting to upstream, client: 127.0.0.1, server: manage.panda.com, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:9001/", host: "manage.panda.com"
+2019/04/26 19:49:24 [notice] 9584#11652: signal process started
+2019/04/26 20:49:52 [notice] 12056#516: signal process started
+2019/04/26 20:49:52 [error] 12056#516: CreateFile() "D:\My_Utils\nginx-1.12.2_panda_mall/logs/nginx.pid" failed (2: The system cannot find the file specified)
