@@ -1,0 +1,7 @@
+# 文件位于C:\Windows\System32\drivers\etc
+
+# 熊猫商城
+127.0.0.1 www.panda.com
+127.0.0.1 api.panda.com
+127.0.0.1 manage.panda.com
+192.168.206.66 image.panda.com
