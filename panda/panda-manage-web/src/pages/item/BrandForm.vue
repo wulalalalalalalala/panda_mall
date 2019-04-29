@@ -1,6 +1,6 @@
 <template>
   <!--通过ref把v-form关联给了MyBrandForm，以后可以用this.$refs获取-->
-  <v-form v-model="valid" ref="MyBrandForm">
+  <v-form v-model="valid" ref="myBrandForm">
     <v-text-field v-model="brand.name" label="请输入品牌名称" required :rules="nameRules"/>
     <v-text-field v-model="brand.letter" label="请输入品牌首字母" required :rules="letterRules"/>
     <!--required属性表示不能为空-->
@@ -15,8 +15,9 @@
         <span style="font-size: 16px; color: #444">品牌LOGO：</span>
       </v-flex>
       <v-flex>
+        <!--第一个upload为网关，第二个upload为controller类上的，第三个为方法上的-->
         <v-upload
-          v-model="brand.image" url="/upload/image" :multiple="false" :pic-width="250" :pic-height="90"
+          v-model="brand.image" url="/upload/upload/image" :multiple="false" :pic-width="250" :pic-height="90"
         />
       </v-flex>
     </v-layout>
@@ -47,7 +48,7 @@
           name: '', // 品牌名称
           letter: '', // 品牌首字母
           image: '',// 品牌logo
-          categories: [], // 品牌所属的商品分类数组
+          categories: [], // 品牌所属的商品分类数组（除checkbox外，前台不能给后台直接传递数组，否则容易出问题）
         },
         nameRules: [
           v => !!v || "品牌名称不能为空",
@@ -74,6 +75,7 @@
           this.$http({
             method: this.isEdit ? 'put' : 'post',
             url: '/item/brand',
+            // qs工具：将json变成请求参数类型
             data: this.$qs.stringify(params)
           }).then(() => {
             // 关闭窗口

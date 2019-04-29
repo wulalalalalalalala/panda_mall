@@ -10,6 +10,7 @@
         <module name="eureka-server" />
         <module name="item-interface" />
         <module name="item-service" />
+        <module name="upload" />
         <module name="zuul-gateway" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
       <module name="eureka-server" options="-parameters" />
       <module name="item-interface" options="-parameters" />
       <module name="item-service" options="-parameters" />
+      <module name="upload" options="-parameters" />
       <module name="zuul-gateway" options="-parameters" />
     </option>
   </component>

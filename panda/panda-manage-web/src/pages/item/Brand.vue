@@ -141,10 +141,10 @@
           })
       },
       closeWindow() {
-        // 重新加载数据
-        this.getDataFromServer();
         // 关闭窗口
         this.show = false;
+        // 关闭窗口重新加载数据
+        this.getDataFromServer();
       }
     },
     components: {
